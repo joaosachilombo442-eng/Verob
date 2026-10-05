@@ -40,7 +40,7 @@ a { text-decoration:none; } button { cursor:pointer; }
 .hero::after { content:''; position:absolute; right:0; bottom:0; width:36%; height:5px; background:var(--gradient-brand); }
 .hero h1 { font-size:64px; font-weight:800; margin:20px 0; max-width:720px; }
 .hero h1 span { color:var(--cyan); }
-.hero-content { padding-block:65px; width:100%; }
+.hero-content { padding-block:65px; }
 .hero .eyebrow { color:var(--on-dark-muted); }
 .hero-intro { max-width:510px; color:var(--on-dark-muted); font-size:14px; }
 .hero-subtitle { font-size:21px; font-weight:500; margin-bottom:15px; }
