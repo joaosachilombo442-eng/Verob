@@ -8,3 +8,9 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep official company details, service definitions and future media records in a single browser-safe configuration module so content can change consistently.
+- Render the institutional experience at the index route with section anchors because the brief explicitly requires one scrolling page.
+- Keep quotation drafts in React state only and hand off encoded messages to WhatsApp, so personal data is never stored by this first version.
+- Define the visual system in global CSS and use Button variants for interactive controls so the identity remains consistent.
+- Hide portfolio and video sections when the configured real-content arrays are empty so illustrative media is never presented as completed work.
