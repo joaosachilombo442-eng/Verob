@@ -9,7 +9,7 @@ import logo from '@/assets/verob-logo.jpeg.asset.json';
 import director from '@/assets/director-verob.jpeg.asset.json';
 import construction from '@/assets/construction-editorial.jpg';
 const title='VEROB | Construção Civil, Materiais e Equipamentos';
-const description='Conheça a VEROB em Luanda, Angola. Construção civil, materiais de escritório, materiais individuais e equipamentos. Solicite informações e orçamento.';
+const description='VEROB em Luanda, Angola: 10 serviços em construção, escritório e informática, proteção e equipamentos, indústria e negócios. Peça o seu orçamento.';
 export const Route=createFileRoute('/')({head:()=>({meta:[{title},{name:'description',content:description},{property:'og:title',content:title},{property:'og:description',content:description},{property:'og:type',content:'website'},{name:'twitter:card',content:'summary_large_image'}]}),component:Index});
 function Index(){
  const [menu,setMenu]=useState(false); const [active,setActive]=useState('inicio'); const [expanded,setExpanded]=useState<string|null>(null); const [explored,setExplored]=useState<string[]>([]); const [selected,setSelected]=useState<string[]>([]); const [filter,setFilter]=useState<string>('Todos'); const progress=useRef<HTMLDivElement>(null);
