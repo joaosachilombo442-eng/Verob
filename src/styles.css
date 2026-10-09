@@ -84,7 +84,7 @@ a { text-decoration:none; } button { cursor:pointer; }
 .contact-card { display:flex; gap:16px; padding:22px 0; border-bottom:1px solid var(--border); }
 .contact-card svg { color:var(--primary); width:21px; margin-top:4px; }
 .contact-card strong {display:block;font-size:15px;} .contact-card span {font-size:11px;color:var(--muted-foreground);text-transform:uppercase;letter-spacing:1px;}
-.director-photo { width:100%;height:420px;object-fit:cover;object-position:center 25%;border-radius:4px; }
+.director-photo { width:100%;height:420px;object-fit:cover;object-position:center 15%;border-radius:4px; }
 .final-cta { background:var(--navy); color:var(--on-dark); padding-block:64px; border-top:4px solid var(--primary); }
 footer { padding:60px 0 30px; background:var(--secondary); } footer a {color:var(--muted-foreground);font-size:12px;} footer a:hover {color:var(--primary);}
 .whatsapp-float { position:fixed; bottom:24px;right:24px;z-index:35;width:54px;height:54px;border-radius:50%;background:var(--success);color:var(--on-dark);box-shadow:var(--shadow-card); }
@@ -106,3 +106,9 @@ footer { padding:60px 0 30px; background:var(--secondary); } footer a {color:var
 .social-card:hover { transform:translateY(-4px); box-shadow:var(--shadow-card); border-color:var(--primary); }
 .social-card:hover .service-icon svg { animation:icon-pop .4s ease-out; }
 @media(max-width:767px){ .selection-bar{ margin-right:56px; bottom:12px; } footer .grid{gap:28px;} }
+.service-media { position:relative; margin:-28px -28px 22px; aspect-ratio:16/10; overflow:hidden; border-radius:6px 6px 0 0; background:var(--secondary); }
+.service-media img { width:100%; height:100%; object-fit:cover; object-position:center 30%; transition:transform .5s; }
+.service-card:hover .service-media img { transform:scale(1.04); }
+.service-media figcaption { position:absolute; right:8px; bottom:8px; font-size:10px; background:color-mix(in oklab,var(--background) 88%,transparent); padding:2px 8px; border-radius:3px; color:var(--muted-foreground); }
+.hero-photo { object-position:75% center; }
+@media(max-width:767px){ .service-media{ margin:-24px -24px 18px; aspect-ratio:16/9; } .hero-photo{ object-position:80% center; } }

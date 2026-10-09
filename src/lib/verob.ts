@@ -1,3 +1,13 @@
+import img_construcao from '@/assets/svc-construcao.webp';
+import img_escritorio from '@/assets/svc-escritorio.webp';
+import img_individuais from '@/assets/svc-individuais.webp';
+import img_equipamentos from '@/assets/svc-equipamentos.webp';
+import img_materiais from '@/assets/svc-materiais.webp';
+import img_consumiveis from '@/assets/svc-consumiveis.webp';
+import img_mobiliario from '@/assets/svc-mobiliario.webp';
+import img_quimicos from '@/assets/svc-quimicos.webp';
+import img_comercio from '@/assets/svc-comercio.webp';
+import img_consultoria from '@/assets/svc-consultoria.webp';
 import { Building2, BriefcaseBusiness, ShieldCheck, Cog, BrickWall, Printer, Armchair, FlaskConical, Globe, ClipboardList } from 'lucide-react';
 export const company = {
   name: 'VEROB — Comércio e Serviços, (SU), LDA',
@@ -22,7 +32,7 @@ export const generalMessage = 'Olá, VEROB. Vi o vosso portfólio e gostaria de 
 export const serviceMessage = (name: string) => `Olá, VEROB. Gostaria de solicitar informações e uma proposta sobre: ${name}.`;
 export const categories = ['Construção', 'Escritório e informática', 'Proteção e equipamentos', 'Indústria e negócios'] as const;
 export type Category = (typeof categories)[number];
-type Service = { id: string; name: string; category: Category; icon: typeof Building2; short: string; description: string; details?: string[]; action: string };
+type Service = { id: string; name: string; category: Category; icon: typeof Building2; short: string; description: string; details?: string[]; action: string; image?: string; imageAlt?: string };
 export const services: Service[] = [
   { id: 'construcao', name: 'Construção civil', category: 'Construção', icon: Building2, short: 'Execução de obras e intervenções.', description: 'Apresente-nos o seu projeto ou a intervenção de que precisa e consulte os serviços de construção civil da VEROB.', action: 'Falar sobre uma obra' },
   { id: 'escritorio', name: 'Materiais de escritório', category: 'Escritório e informática', icon: BriefcaseBusiness, short: 'Fornecimentos para o dia a dia de trabalho.', description: 'Fornecimento de materiais de escritório para apoiar as atividades de empresas, instituições e organizações.', action: 'Consultar materiais de escritório' },
@@ -35,6 +45,8 @@ export const services: Service[] = [
   { id: 'comercio', name: 'Comércio geral, importação e exportação', category: 'Indústria e negócios', icon: Globe, short: 'Grosso, retalho, importação e exportação.', description: 'Comércio a grosso e a retalho, importação e exportação de bens, conforme as necessidades comerciais apresentadas.', action: 'Apresentar pedido comercial' },
   { id: 'consultoria', name: 'Consultoria, apoio administrativo e logística', category: 'Indústria e negócios', icon: ClipboardList, short: 'Apoio à organização e operação.', description: 'Consultoria empresarial, apoio administrativo e gestão de logística para diferentes necessidades de organização e operação.', details: ['Consultoria empresarial', 'Apoio administrativo', 'Gestão de logística'], action: 'Solicitar apoio empresarial' },
 ];
+const imgs: Record<string,[string,string]> = {'construcao':[img_construcao,'Equipa com proteção a trabalhar numa obra organizada — imagem ilustrativa'],'escritorio':[img_escritorio,'Profissional a organizar materiais de escritório numa estante — imagem ilustrativa'],'individuais':[img_individuais,'Profissionais a verificar capacetes, luvas, óculos e botas de proteção — imagem ilustrativa'],'equipamentos':[img_equipamentos,'Técnico com óculos de proteção a inspecionar equipamento — imagem ilustrativa'],'materiais-construcao':[img_materiais,'Profissionais a conferir cimento, tijolos e varões num armazém — imagem ilustrativa'],'consumiveis':[img_consumiveis,'Profissional a verificar um tinteiro junto a uma impressora — imagem ilustrativa'],'mobiliario':[img_mobiliario,'Profissionais a organizar secretárias e cadeiras num escritório moderno — imagem ilustrativa'],'quimicos':[img_quimicos,'Técnico com proteção a verificar bidões selados num ambiente industrial — imagem ilustrativa'],'comercio':[img_comercio,'Profissionais a conferir mercadorias paletizadas num armazém de logística — imagem ilustrativa'],'consultoria':[img_consultoria,'Reunião de planeamento com documentos e computador — imagem ilustrativa']};
+for (const s of services) { [s.image, s.imageAlt] = imgs[s.id]; }
 export const navigation = [{ id: 'inicio', label: 'Início' }, { id: 'sobre', label: 'Sobre' }, { id: 'servicos', label: 'Serviços' }, { id: 'valores', label: 'Valores' }, { id: 'contactos', label: 'Contactos' }];
 export type PortfolioItem = { id: string; category: string; image: string; caption: string };
 export type VideoItem = { id: string; cover: string; src: string; title: string; description: string };
