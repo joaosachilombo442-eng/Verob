@@ -110,5 +110,5 @@ footer { padding:60px 0 30px; background:var(--secondary); } footer a {color:var
 .service-media img { width:100%; height:100%; object-fit:cover; object-position:center 30%; transition:transform .5s; }
 .service-card:hover .service-media img { transform:scale(1.04); }
 .service-media figcaption { position:absolute; right:8px; bottom:8px; font-size:10px; background:color-mix(in oklab,var(--background) 88%,transparent); padding:2px 8px; border-radius:3px; color:var(--muted-foreground); }
-.hero-photo { object-position:75% center; }
+.hero-photo { object-position:75% 15%; }
 @media(max-width:767px){ .service-media{ margin:-24px -24px 18px; aspect-ratio:16/9; } .hero-photo{ object-position:80% center; } }
