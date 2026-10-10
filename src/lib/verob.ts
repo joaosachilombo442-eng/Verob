@@ -7,7 +7,8 @@ import img_consumiveis from '@/assets/svc-consumiveis.webp';
 import img_mobiliario from '@/assets/svc-mobiliario.webp';
 import img_quimicos from '@/assets/svc-quimicos.webp';
 import img_comercio from '@/assets/svc-comercio.webp';
-import img_consultoria from '@/assets/svc-equipa.webp';
+import teamAsset from '@/assets/equipa-verob.png.asset.json';
+const img_consultoria = teamAsset.url;
 import { Building2, BriefcaseBusiness, ShieldCheck, Cog, BrickWall, Printer, Armchair, FlaskConical, Globe, ClipboardList } from 'lucide-react';
 export const company = {
   name: 'VEROB — Comércio e Serviços, (SU), LDA',
@@ -47,6 +48,8 @@ export const services: Service[] = [
 ];
 const imgs: Record<string,[string,string]> = {'construcao':[img_construcao,'Equipa com coletes VEROB a nivelar betão numa obra — imagem ilustrativa'],'escritorio':[img_escritorio,'Profissional a organizar materiais de escritório numa estante — imagem ilustrativa'],'individuais':[img_individuais,'Profissionais com coletes VEROB a verificar capacetes, luvas, óculos e botas de proteção — imagem ilustrativa'],'equipamentos':[img_equipamentos,'Técnico com óculos de proteção a inspecionar equipamento — imagem ilustrativa'],'materiais-construcao':[img_materiais,'Profissionais com coletes VEROB a conferir cimento, tijolos e varões — imagem ilustrativa'],'consumiveis':[img_consumiveis,'Profissional a verificar um tinteiro junto a uma impressora — imagem ilustrativa'],'mobiliario':[img_mobiliario,'Profissionais a organizar secretárias e cadeiras num escritório moderno — imagem ilustrativa'],'quimicos':[img_quimicos,'Técnico com proteção a verificar bidões selados num ambiente industrial — imagem ilustrativa'],'comercio':[img_comercio,'Dois profissionais com coletes VEROB a conferir mercadorias num armazém — imagem ilustrativa'],'consultoria':[img_consultoria,'Equipa VEROB: quatro profissionais com coletes VEROB']};
 for (const s of services) { const m = imgs[s.id]; if (m) { s.image = m[0]; s.imageAlt = m[1]; } }
+const teamService = services.find(s => s.id === 'consultoria');
+if (teamService) teamService.imageAlt = 'Três pessoas com coletes VEROB, com a mulher de óculos, cabelo encaracolado e camisola amarela ao centro';
 export const navigation = [{ id: 'inicio', label: 'Início' }, { id: 'sobre', label: 'Sobre' }, { id: 'servicos', label: 'Serviços' }, { id: 'valores', label: 'Valores' }, { id: 'contactos', label: 'Contactos' }];
 export type PortfolioItem = { id: string; category: string; image: string; caption: string };
 export type VideoItem = { id: string; cover: string; src: string; title: string; description: string };
