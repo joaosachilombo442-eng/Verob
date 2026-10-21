@@ -7,8 +7,8 @@ import img_consumiveis from '@/assets/svc-consumiveis.webp';
 import img_mobiliario from '@/assets/svc-mobiliario.webp';
 import img_quimicos from '@/assets/svc-quimicos.webp';
 import img_comercio from '@/assets/svc-comercio.webp';
-import teamAsset from '@/assets/equipa-verob.png.asset.json';
-const img_consultoria = teamAsset.url;
+import teamSrc from '@/assets/equipa-verob.png';
+const img_consultoria = teamSrc;
 import { Building2, BriefcaseBusiness, ShieldCheck, Cog, BrickWall, Printer, Armchair, FlaskConical, Globe, ClipboardList } from 'lucide-react';
 export const company = {
   name: 'VEROB — Comércio e Serviços, (SU), LDA',
