@@ -14,3 +14,4 @@
 - Keep quotation drafts in React state only and hand off encoded messages to WhatsApp, so personal data is never stored by this first version.
 - Define the visual system in global CSS and use Button variants for interactive controls so the identity remains consistent.
 - Hide portfolio and video sections when the configured real-content arrays are empty so illustrative media is never presented as completed work.
+- Bundle brand images (logo, director, team) as local src/assets files, not CDN asset pointers, because /__l5e asset URLs return 404 on the custom domain verob.org.
