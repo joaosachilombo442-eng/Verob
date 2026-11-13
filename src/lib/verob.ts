@@ -8,6 +8,13 @@ import img_mobiliario from '@/assets/svc-mobiliario.webp';
 import img_quimicos from '@/assets/svc-quimicos.webp';
 import img_comercio from '@/assets/svc-comercio.webp';
 import teamSrc from '@/assets/equipa-verob.png';
+import productAgendaBlack from '@/assets/office-agenda-black.webp';
+import productAgendaBlue from '@/assets/office-agenda-blue.webp';
+import productNotebookRed from '@/assets/office-notebook-red.webp';
+import productPensSet from '@/assets/office-pens-set.webp';
+import productNotebookPen from '@/assets/office-notebook-pen.webp';
+import productNotebookRedPen from '@/assets/office-notebook-red-pen.webp';
+import productAgendaPremium from '@/assets/office-agenda-premium.webp';
 const img_consultoria = teamSrc;
 import { Building2, BriefcaseBusiness, ShieldCheck, Cog, BrickWall, Printer, Armchair, FlaskConical, Globe, ClipboardList } from 'lucide-react';
 export const company = {
@@ -31,6 +38,15 @@ export const social = {
 export const whatsappUrl = (message: string) => `https://wa.me/244934504224?text=${encodeURIComponent(message)}`;
 export const generalMessage = 'Olá, VEROB. Vi o vosso portfólio e gostaria de solicitar informações ou um orçamento.';
 export const serviceMessage = (name: string) => `Olá, VEROB. Gostaria de solicitar informações e uma proposta sobre: ${name}.`;
+export const officeProductPhotos = [
+  { image: productAgendaBlack, title: 'Agenda VEROB preta' },
+  { image: productAgendaBlue, title: 'Agenda VEROB azul' },
+  { image: productNotebookRed, title: 'Caderno VEROB vermelho' },
+  { image: productPensSet, title: 'Conjunto de esferográficas VEROB' },
+  { image: productNotebookPen, title: 'Caderno e esferográfica personalizados VEROB' },
+  { image: productNotebookRedPen, title: 'Caderno vermelho e esferográfica VEROB' },
+  { image: productAgendaPremium, title: 'Agenda VEROB com acabamento premium' },
+];
 export const categories = ['Construção', 'Escritório e informática', 'Proteção e equipamentos', 'Indústria e negócios'] as const;
 export type Category = (typeof categories)[number];
 type Service = { id: string; name: string; category: Category; icon: typeof Building2; short: string; description: string; details?: string[]; action: string; image?: string; imageAlt?: string };
