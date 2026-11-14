@@ -8,13 +8,13 @@ import img_mobiliario from '@/assets/svc-mobiliario.webp';
 import img_quimicos from '@/assets/svc-quimicos.webp';
 import img_comercio from '@/assets/svc-comercio.webp';
 import teamSrc from '@/assets/equipa-verob.png';
-import productAgendaBlack from '@/assets/office-agenda-black.jpeg.asset.json';
-import productAgendaBlue from '@/assets/office-agenda-blue.jpeg.asset.json';
-import productNotebookRed from '@/assets/office-notebook-red.jpeg.asset.json';
-import productPensSet from '@/assets/office-pens-set.jpeg.asset.json';
-import productNotebookPen from '@/assets/office-notebook-pen.jpeg.asset.json';
-import productNotebookRedPen from '@/assets/office-notebook-red-pen.jpeg.asset.json';
-import productAgendaPremium from '@/assets/office-agenda-premium.jpeg.asset.json';
+import productAgendaBlack from '@/assets/office-product-agenda-black.jpeg';
+import productAgendaBlue from '@/assets/office-product-agenda-blue.jpeg';
+import productNotebookRed from '@/assets/office-product-notebook-red.jpeg';
+import productPensSet from '@/assets/office-product-pens-set.jpeg';
+import productNotebookPen from '@/assets/office-product-notebook-pen.jpeg';
+import productNotebookRedPen from '@/assets/office-product-notebook-red-pen.jpeg';
+import productAgendaPremium from '@/assets/office-product-agenda-premium.jpeg';
 const img_consultoria = teamSrc;
 import { Building2, BriefcaseBusiness, ShieldCheck, Cog, BrickWall, Printer, Armchair, FlaskConical, Globe, ClipboardList } from 'lucide-react';
 export const company = {
@@ -39,13 +39,13 @@ export const whatsappUrl = (message: string) => `https://wa.me/244934504224?text
 export const generalMessage = 'Olá, VEROB. Vi o vosso portfólio e gostaria de solicitar informações ou um orçamento.';
 export const serviceMessage = (name: string) => `Olá, VEROB. Gostaria de solicitar informações e uma proposta sobre: ${name}.`;
 export const officeProductPhotos = [
-  { image: productAgendaBlack.url, title: 'Agenda VEROB preta' },
-  { image: productAgendaBlue.url, title: 'Agenda VEROB azul' },
-  { image: productNotebookRed.url, title: 'Caderno VEROB vermelho' },
-  { image: productPensSet.url, title: 'Conjunto de esferográficas VEROB' },
-  { image: productNotebookPen.url, title: 'Caderno e esferográfica personalizados VEROB' },
-  { image: productNotebookRedPen.url, title: 'Caderno vermelho e esferográfica VEROB' },
-  { image: productAgendaPremium.url, title: 'Agenda VEROB com acabamento premium' },
+  { image: productAgendaBlack, title: 'Agenda VEROB preta' },
+  { image: productAgendaBlue, title: 'Agenda VEROB azul' },
+  { image: productNotebookRed, title: 'Caderno VEROB vermelho' },
+  { image: productPensSet, title: 'Conjunto de esferográficas VEROB' },
+  { image: productNotebookPen, title: 'Caderno e esferográfica personalizados VEROB' },
+  { image: productNotebookRedPen, title: 'Caderno vermelho e esferográfica VEROB' },
+  { image: productAgendaPremium, title: 'Agenda VEROB com acabamento premium' },
 ];
 export const categories = ['Construção', 'Escritório e informática', 'Proteção e equipamentos', 'Indústria e negócios'] as const;
 export type Category = (typeof categories)[number];
