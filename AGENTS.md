@@ -15,3 +15,4 @@
 - Define the visual system in global CSS and use Button variants for interactive controls so the identity remains consistent.
 - Hide portfolio and video sections when the configured real-content arrays are empty so illustrative media is never presented as completed work.
 - Bundle site media used on verob.org as local src/assets files, not CDN pointers, because /__l5e asset URLs return 404 on the custom domain.
+- Store official staff profiles in the central VEROB configuration and keep their cards separate from service data, so team members do not change service counts or filters.

@@ -6,3 +6,6 @@
 - [x] Swap the complete Construção civil and Consumíveis informáticos cards in the service grid.
 - [x] Add a responsive, zoomable gallery of the supplied real office-product photos to Materiais de escritório.
 - [x] Verify the reordered service cards and office-product gallery on desktop and mobile.
+- [x] Place Construção civil and Materiais de construção together immediately before Consultoria.
+- [x] Add the two supplied team profiles after Consultoria, with the requested names and roles.
+- [x] Verify card order, profile images, and carousel behavior on desktop and mobile.

@@ -15,6 +15,8 @@ import productPensSet from '@/assets/office-product-pens-set.jpeg';
 import productNotebookPen from '@/assets/office-product-notebook-pen.jpeg';
 import productNotebookRedPen from '@/assets/office-product-notebook-red-pen.jpeg';
 import productAgendaPremium from '@/assets/office-product-agenda-premium.jpeg';
+import aguinaldoImage from '@/assets/aguinaldo-francisco.jpeg';
+import emiliaImage from '@/assets/emilia-jombi.jpeg';
 const img_consultoria = teamSrc;
 import { Building2, BriefcaseBusiness, ShieldCheck, Cog, BrickWall, Printer, Armchair, FlaskConical, Globe, ClipboardList } from 'lucide-react';
 export const company = {
@@ -46,6 +48,21 @@ export const officeProductPhotos = [
   { image: productNotebookPen, title: 'Caderno e esferográfica personalizados VEROB' },
   { image: productNotebookRedPen, title: 'Caderno vermelho e esferográfica VEROB' },
   { image: productAgendaPremium, title: 'Agenda VEROB com acabamento premium' },
+];
+export type TeamMember = { name: string; role: string; image: string; imageAlt: string };
+export const teamMembers: TeamMember[] = [
+  {
+    name: 'Aguinaldo J. C. Francisco',
+    role: 'Director de Contabilidade e Finanças',
+    image: aguinaldoImage,
+    imageAlt: 'Aguinaldo J. C. Francisco, Director de Contabilidade e Finanças da VEROB',
+  },
+  {
+    name: 'Emília Cândua Jombi',
+    role: 'Assistente Comercial',
+    image: emiliaImage,
+    imageAlt: 'Emília Cândua Jombi, Assistente Comercial da VEROB',
+  },
 ];
 export const categories = ['Construção', 'Escritório e informática', 'Proteção e equipamentos', 'Indústria e negócios'] as const;
 export type Category = (typeof categories)[number];

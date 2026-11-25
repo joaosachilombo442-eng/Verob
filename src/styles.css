@@ -117,6 +117,19 @@ footer { padding:60px 0 30px; background:var(--secondary); } footer a {color:var
 .team-media img, .service-card:hover .team-media img { width:100%; height:100%; object-fit:contain; object-position:center; transform:none; }
 .team-lightbox { position:fixed; inset:0; z-index:60; background:var(--navy); display:flex; align-items:center; justify-content:center; padding:4rem 1rem; }
 .team-lightbox img { max-width:100%; max-height:85vh; height:auto; background:var(--background); }
+.team-profiles { padding-block:52px; border-top:1px solid var(--border); background:var(--background); }
+.team-carousel-heading { display:flex; align-items:end; justify-content:space-between; gap:24px; margin-bottom:24px; }
+.team-carousel-heading .eyebrow { margin-bottom:12px; }
+.team-carousel-heading .section-title { margin:0; }
+.team-carousel-controls { display:flex; gap:8px; flex-shrink:0; }
+.team-carousel-track { display:flex; gap:16px; overflow-x:auto; scroll-snap-type:x mandatory; scroll-behavior:smooth; scrollbar-width:thin; padding-bottom:8px; }
+.team-profile-card { flex:0 0 calc(50% - 8px); min-width:0; display:grid; grid-template-columns:minmax(110px,.8fr) minmax(0,1.2fr); align-items:center; gap:20px; padding:16px; border:1px solid var(--border); border-radius:6px; background:var(--card); scroll-snap-align:start; }
+.team-profile-card img { width:100%; aspect-ratio:4/5; object-fit:contain; object-position:center; background:var(--secondary); border-radius:4px; }
+.team-profile-copy { min-width:0; }
+.team-profile-copy h3 { font-size:18px; font-weight:700; overflow-wrap:anywhere; }
+.team-profile-copy p { margin-top:8px; font-size:13px; color:var(--muted-foreground); }
+@media(max-width:767px){.team-profiles{padding-block:42px;}.team-carousel-heading{align-items:center;}.team-carousel-heading .section-title{font-size:24px;}.team-profile-card{flex-basis:88%;grid-template-columns:minmax(96px,.8fr) minmax(0,1.2fr);gap:12px;padding:12px;}.team-profile-copy h3{font-size:16px;}.team-profile-copy p{font-size:12px;}}
+@media(min-width:768px){.team-carousel-controls{display:none;}}
 .explore-progress { max-width:28rem; opacity:.85; }
 .explore-track { height:2px; }
 .product-gallery { margin-top:18px; padding-top:16px; border-top:1px solid var(--border); }
